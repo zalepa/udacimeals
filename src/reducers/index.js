@@ -54,7 +54,7 @@ function calendar(state = initialCalendarState, action) {
       }
     case REMOVE_FROM_CALENDAR:
       return {
-        ...state
+        ...state,
         [day]: {
           ...state[day],
           [meal]: null
